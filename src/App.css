@@ -1,10 +1,16 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./img/taoism-8.673d93c6.jpg);
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +32,106 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  right: 0;
+  top: 0;
+}
+
+.dapp-center-modal {
+  width: 100%;
+  padding-top: 80px;
+  margin: 0;
+  border-radius: 0;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-content: space-between;
+  position: relative;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  flex-flow: wrap;
+  width: 450px;
+  min-height: 425px;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.dapp-modal-wrapper {
+  flex: 1;
+  padding: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.swap-input-column {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.swap-input-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #282828;
+  border-radius: 2rem;
+}
+
+.stake-input-container {
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+.stake-input {
+  background: transparent;
+  border: #282828 1px;
+  color: #555;
+  width: max-content;
+  outline: none;
+}
+
+.stake-price-data-column {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.stake-price-data-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.price-data,
+.price-label {
+  font-size: 0.8rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 @keyframes App-logo-spin {
